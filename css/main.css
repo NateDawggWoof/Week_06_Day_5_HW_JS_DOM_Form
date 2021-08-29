@@ -1,0 +1,42 @@
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: darkorange;
+}
+
+#fighters-list{
+  display: flex;
+  flex-flow: row wrap;
+  list-style: none;
+  background-color: lightgray;
+  min-height: 280px;
+}
+
+
+#fighters-list>ul{
+  border: 1px solid rgb(14, 12, 12);
+  margin: 10px;
+  
+}
+
+ul,li{
+  list-style: none;
+  margin: auto;
+  padding: 10px;
+  
+
+}
+
+#form{
+  font-size: 20px;
+  background-color: lightgray;
+  max-width: 400px;
+  padding: 10px;
+}
+
+h2{
+  padding-top: 20px;
+}
+
+input {
+  margin: 10px;
+}

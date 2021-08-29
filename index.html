@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="js/app.js"></script>
+    <title>DBZ Fighter Regeristration App</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+  </head>
+  <body>
+    <h1>DBZ World Tournament</h1>
+    <h2>Fighter Registration</h2>
+    <form id="form">
+      <div id="form-wrapper">
+        <div class="form-item">
+          <label for="nameFirst" class="primary">First Name</label>
+          <input type="text" id="nameFirst" required/>
+        </div>
+
+        <div class="form-item">
+            <label for="nameLast" class="primary">Last Name</label>
+            <input type="text" id="nameLast" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="powerLevel" class="primary">Power Level</label>
+          <input type="number" id="powerLevel" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="race" class="primary">Race</label>
+          <select id="race">
+            <option value="" disabled selected></option>
+            <option value="Human">Human</option>
+            <option value="Saiyan">Saiyan</option>
+            <option value="Namekian">Namekian</option>
+            <option value="Android">Android</option>
+            <option value="Other">Other</option>
+            </select>
+        </div>
+        <div class="form-item">
+            <label for="test">Fighters Colour</label>
+            <input type="color" id="test" name="fighterColor"
+            value="#e66465"/>
+        </div>
+        <div class="form-item">
+            <label for="winningChance">Chance of Winning</label>
+            <input type="range" id="winningChance" name="winningChance"
+            min="0" max="100">
+            <span id="WinningChanceSlider">50%</span>
+        </div>
+        <div>
+            <p>Previous Finalist</p>
+            <input type="radio" id="finalist" name="finalist" value="yes">
+            <label for="finalist">Yes</label>
+            <input type="radio" id="finalist2" name="finalist" value="no">
+            <label for="finalist2">No</label>
+        </div>
+      </div>
+      <input type="submit" value="save"/>
+    </form>
+
+    <h2 id="fighters">Fighters</h2>
+    <ul id="fighters-list"></ul>
+  </body>
+</html>
